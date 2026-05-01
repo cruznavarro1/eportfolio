@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cruz Navarro | Biola Crowell School of Business ePortfolio</title>
+  <style>
+    :root {
+      --primary: #152238;
+      --accent: #b21f2d;
+      --light: #f7f7f4;
+      --text: #252525;
+      --muted: #666;
+      --card: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--light);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 24px 8%;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    nav h1 {
+      margin: 0;
+      font-size: 1.2rem;
+      letter-spacing: 0.5px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover { color: #ffd9dd; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+      padding: 70px 8%;
+      background: linear-gradient(135deg, #152238 0%, #22314d 100%);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      margin: 0 0 12px;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 650px;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 360px;
+      border-radius: 22px;
+      border: 5px solid white;
+      justify-self: center;
+      object-fit: cover;
+      aspect-ratio: 4 / 5;
+      background: #ddd;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 12px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 14px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 54px 8%;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .intro {
+      max-width: 900px;
+      font-size: 1.05rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 26px;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .tag {
+      display: inline-block;
+      background: #edf0f5;
+      color: var(--primary);
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin: 4px 5px 8px 0;
+      font-weight: bold;
+    }
+
+    .project-img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 12px 0;
+      background: #e5e5e5;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    .reflection {
+      background: white;
+      border-left: 6px solid var(--accent);
+      padding: 26px;
+      border-radius: 12px;
+      margin-top: 26px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+    }
+
+    ul { padding-left: 20px; }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 26px 8%;
+    }
+
+    footer a { color: white; font-weight: bold; }
+
+    @media (max-width: 800px) {
+      header { position: static; }
+      nav { align-items: flex-start; }
+      nav div { display: flex; flex-direction: column; gap: 8px; }
+      nav a { margin-left: 0; }
+      .hero { grid-template-columns: 1fr; text-align: center; }
+      .hero p { margin-left: auto; margin-right: auto; }
+      .cards { grid-template-columns: 1fr; }
+      section { padding: 42px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Cruz Navarro | Business ePortfolio</h1>
+      <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#reflection">Reflection</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <h2>Biola Crowell School of Business ePortfolio</h2>
+        <p>
+          Welcome to my professional ePortfolio. I am a Biola University student-athlete studying business with an interest in finance, leadership, teamwork, and using business skills to serve others with integrity.
+        </p>
+        <p>
+          This website highlights my academic work, extracurricular involvement, and the personal skills I am continuing to build as I prepare for a career in business.
+        </p>
+        <a class="button" href="#projects">View My Work</a>
+      </div>
+      <img src="images/profile.jpg" alt="Professional photo of Cruz Navarro" />
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p class="intro">
+        My name is Cruz Navarro, and I am a student at Biola University. As a business student and college soccer player, I have learned the importance of discipline, preparation, communication, and perseverance. Being part of a faith-based university has also shaped the way I view business. I want to grow as a professional who works hard, treats people with respect, and makes decisions with honesty and purpose.
+      </p>
+      <p class="intro">
+        My career interests include finance, commercial real estate, business strategy, and leadership. Through my classes, projects, and athletic experience, I am learning how to think critically, solve problems, and communicate ideas clearly.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Selected Projects</h2>
+      <p class="intro">
+        The projects below represent both academic learning and extracurricular growth. Together, they show how I am developing skills that can help me succeed in business and future career opportunities.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <span class="tag">Academic Project</span>
+          <span class="tag">Finance</span>
+          <span class="tag">Critical Thinking</span>
+          <h3>Financial Statement Analysis Project</h3>
+          <img class="project-img" src="images/academic-project.jpg" alt="Academic financial analysis project image" />
+          <p>
+            For this academic project, I analyzed company financial statements and used financial ratios to evaluate business performance. The project required me to calculate and interpret ratios such as gross profit rate, profit margin, return on assets, asset turnover, and debt-to-assets. Instead of only finding the numbers, I had to explain what the results showed about the company’s financial health.
+          </p>
+          <p>
+            This project helped me practice analytical thinking, spreadsheet organization, financial interpretation, and professional communication. These are important skills for a career in finance because employers need people who can understand data and explain what it means in a clear and useful way.
+          </p>
+          <ul>
+            <li>Used financial data to evaluate company performance.</li>
+            <li>Compared results across years and against a competitor.</li>
+            <li>Developed business recommendations based on ratio analysis.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="tag">Extra-Curricular Project</span>
+          <span class="tag">Leadership</span>
+          <span class="tag">Teamwork</span>
+          <h3>Biola Men’s Soccer Experience</h3>
+          <img class="project-img" src="images/soccer-project.jpg" alt="Biola soccer extracurricular project image" />
+          <p>
+            My experience as a member of the Biola men’s soccer team is an important part of my development outside the classroom. Soccer has helped me grow in discipline, leadership, time management, and teamwork. Balancing school, practices, games, travel, and personal responsibilities has taught me how to stay organized and committed even when life is busy.
+          </p>
+          <p>
+            Being part of a team has also helped me understand how to work with different personalities toward a common goal. This connects directly to business because companies need people who can communicate well, handle pressure, support others, and stay focused on the bigger mission.
+          </p>
+          <ul>
+            <li>Built discipline through consistent training and preparation.</li>
+            <li>Learned how to communicate and collaborate under pressure.</li>
+            <li>Developed resilience through competition and setbacks.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="reflection">
+      <h2 class="section-title">Critical Thinking Reflection</h2>
+      <div class="reflection">
+        <h3>Reflection on My Financial Statement Analysis Project</h3>
+        <p>
+          I chose my financial statement analysis project because it connects closely to my interest in business and finance. The project gave me a chance to take real company information and use it to make a judgment about how the company was performing. I liked this project because it was not just about memorizing formulas. It required me to think about what the numbers actually meant and how those results could affect business decisions.
+        </p>
+        <p>
+          Through this project, I learned how important it is to support opinions with evidence. For example, when looking at ratios like profit margin or debt-to-assets, I had to explain whether the number showed strength, weakness, improvement, or risk. I also learned that one ratio by itself does not tell the whole story. A company might improve in one area but still have problems in another, so it is important to look at the full financial picture.
+        </p>
+        <p>
+          The skills I learned from this project can help my career because finance requires accuracy, critical thinking, and communication. I practiced using formulas, organizing financial information, comparing companies, and turning calculations into professional recommendations. These skills would be useful in careers connected to financial analysis, commercial real estate, investing, accounting, or business management.
+        </p>
+        <p>
+          If I could do this project again, I would spend more time making the visual presentation cleaner and more professional from the beginning. I would also compare more years of financial data instead of focusing mainly on a shorter time period. This would help me see whether the company’s performance was part of a long-term trend or just a temporary change. I would also include more outside research about the company’s industry so my recommendations would be supported by both the financial ratios and the business environment.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact & Professional Links</h2>
+      <p class="intro">
+        Thank you for viewing my ePortfolio. I am continuing to grow as a business student, student-athlete, and future professional. I am interested in opportunities where I can develop my finance, leadership, and communication skills.
+      </p>
+      <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank" rel="noopener">Connect with me on LinkedIn</a>
+      </p>
+      <p>
+        <strong>Email:</strong> your.email@example.com
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Cruz Navarro | Biola Crowell School of Business ePortfolio</p>
+  </footer>
+</body>
+</html>
